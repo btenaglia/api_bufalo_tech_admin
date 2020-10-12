@@ -23,8 +23,11 @@ Moved to settings_.
 
 Basic Commands
 --------------
-docker-compose -f local.yml up --build
-docker-compose -f local.yml run django python manage.py createsuperuser
+
+::
+
+    $ docker-compose -f local.yml up --build
+    $ docker-compose -f local.yml run django python manage.py createsuperuser
 
 
 Setting Up Your Users
