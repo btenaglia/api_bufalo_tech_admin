@@ -14,3 +14,4 @@ class Expenses(BaseCreatedUpdatedModel):
 
     type = models.ForeignKey('expenses.Types', on_delete=models.PROTECT)
     amount = models.DecimalField('Price', max_digits=8, decimal_places=2)
+    date = models.DateField('Fecha', null=True, blank=True)
